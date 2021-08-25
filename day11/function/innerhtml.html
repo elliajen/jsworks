@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML 속성</title>
+</head>
+<body>
+    <h1>My Web Page</h1>
+    <p id="myP">This is a p tag</p>
+    <div id="myDiv">This is div tag</div>
+    <script>
+        document.getElementById("myP").innerHTML = "Hello"  //p태그의 내용이 저절로 바뀜
+        document.getElementById("myDiv").innerHTML = "How are you"  //div태그의 내용이 저절로 바뀜
+    </script>
+</body>
+</html>

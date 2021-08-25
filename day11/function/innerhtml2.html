@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML 속성</title>
+</head>
+<body>
+    <h1>My Web Page</h1>
+    <!-- <p id="myP" onclick="myFunction()">This is p tag</p> -->
+    <!-- <p id="myP" onmouseover="myFunction()">This is p tag</p> 커서를 올려놓으면 : onmouseover -->
+
+    <button onclick="myFunction()">확인</button>
+    <p id="myP"></p>    <!--버튼을 클릭하면 내용이 나타난다.-->
+
+    <script>
+        function myFunction(){
+            document.getElementById("myP").innerHTML = "CONTENTS ADD"
+        }
+    </script>
+</body>
+</html>

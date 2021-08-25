@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>윤년을 판별하는 프로그램</title>
+</head>
+<body>
+    <script>
+        //윤년을 알려주는 프로그램
+        //조검 - 4년마다 오며 100년 단위는 아니며, 400년 단위로 윤년이다.
+        var year = prompt("연도를 입력하세요", "2021");
+
+        if(year !== null){
+            if((year % 4 === 0) || (year % 100 !== 0) && (year % 400 === 0)){
+                //입력 년도에 4를 나눠 맞아떨어지거나 100으로 나눴을때 나머지가 있고 400으로 나눴을때 맞아 떨어지면 참이다.
+                //전체 괄호 안에 수식괄호 따로들어간거임
+                document.write(year + "년은 <strong>윤년입니다.</strogn>");
+            }else{
+            document.write(year + "년은 <strong>윤년이 아닙니다.<strong>");
+            }
+        }else{
+            window.alert("입력이 취소되었습니다.");
+        }
+    </script>
+</body>
+</html>
