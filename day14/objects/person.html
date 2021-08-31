@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자 정의 객체 만들기</title>
+</head>
+<body>
+    <script>
+        //객체(사물 ex.컴퓨터, 책 등, 추상화된 사물 ex.학원, 회사) - object
+        var person = { //키(속성) : 값
+            name : "김연경", 
+            age : 34,
+            isMerried : false,
+            stature : 192,
+            ect : "레전드 클래스 - '배구 여제' 김연경, 그녀의 노하우를 모두 집약시켜 놓은 '유일무이' 배구",
+
+            play : function(){
+                alert("김연경의 스파이크, 결국 한점을 따냅니다!");  //window.alert(--)인데 window.은 생략
+            }
+        }
+        //객체 사용방법
+        //점(--.--) 연산자로 멤버 변수에 접근
+        document.write("이름 : " + person.name + '<br>');
+        document.write("나이 : " + person.age + '<br>');
+        document.write("키 : " + person.stature + '<br>');
+        document.write("결혼 여부 : " + person.isMerried + '<br>');
+        document.write("관련 정보 : " + person.ect + '<br>');
+
+        //멤버 함수 호출
+        person.play();
+    </script>
+</body>
+</html>

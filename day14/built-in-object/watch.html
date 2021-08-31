@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Watch</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        p{font-size: 2em;
+            color: aliceblue;
+            width: 350px; height: 150px;
+            background-color: darkslategray;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <p id="display"></p>
+
+    <script>
+        //setInterval() - window 객체 소속
+        setInterval(watch, 1000); //watch 함수 호출 괄호()가 있으면 실행할때 오류가 생길수 있다.
+        //-> 괄호() 생략(다른 함수 내에서 설정 될 경우 들어갈때)
+
+        function watch(){
+            var date = new Date();
+            var now = date.toLocaleTimeString(); //시간 형식으로  변경
+            document.getElementById('display').innerHTML = now;
+        }
+    </script>
+</body>
+</html>
