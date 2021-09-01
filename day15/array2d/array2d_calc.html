@@ -9,7 +9,7 @@
 <body>
     <script>
         //이차원 배열 연산
-        var arr = [[1, 2, 3, 4], [4, 5, 6, 7]]
+        var arr = [[1, 2, 3, 4], [4, 5, 6]]
         var i, j;
         var sum = 0;
         var avg = 0.0;
@@ -29,7 +29,8 @@
         avg = sum / count;  //평균 = 합계 / 개수
         document.write("합계 : " + sum + '<br>');
         document.write("개수 : " + count + '<br>');
-        document.write("평균 : " + avg + '<br>');
+        document.write("평균 : " + avg.toFixed(1) + '<br>');
+        //tofixed() 소수점 몇자리까지 볼껀지 지정
 
     </script>
 </body>

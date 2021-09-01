@@ -1,0 +1,15 @@
+/* 전체 선택 - 박스크기 - border-box*/
+*{margin: 0 auto; padding: 0; box-sizing: border-box;}
+#container{
+    width: 330px;
+    height: 365px;
+    border: 2px solid rgb(163, 54, 54);
+    border-radius: 5px;
+    margin: 10px auto;
+    background-color: salmon;
+    position: relative; /*부모를 상대위치로 설정*/
+}
+h2{padding: 30px 20px;text-align: center;}
+p{padding-left: 20px; line-height: 2.5;}
+.small{margin-left: 25px; margin-top: 40px; font-size: 0.9em; line-height: 2;}
+.close{position: absolute; bottom: 40px; right: 50px;}
