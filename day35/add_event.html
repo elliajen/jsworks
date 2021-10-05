@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사진 이벤트</title>
+</head>
+<body>
+    <div class="content">
+        <img src="./img/cup-6.jpg" id="pic" alt="커피잔">
+    </div>
+    <script>
+    //이벤트가 2개인 경우 addEventListener() 함수 사용
+    pic = document.getElementById('pic');
+    //마우스을 올리고 내렸을때 이벤트
+    pic.addEventListener('mouseover', function(){   //주의 on을 생략
+        pic.src = "./img/cup-7.jpg";
+    });
+    pic.addEventListener('mouseout', function(){
+        pic.src = "./img/cup-6.jpg";
+    });
+    </script>
+</body>
+</html>
