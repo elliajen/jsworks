@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="./jquery-3.6.0.js"></script>
+</head>
+<body>
+    <h2>어서오세요~ 방문을 환영합니다.</h2>
+    <div class="info">
+        <p id="intro">오늘은 흐린 날씨입니다.</p>
+        <p>이번주말부터 자츰 기온이 떨어지겠습니다.</p>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            // $("#intro").css("color", "green");
+            $("#intro").css({'color' :'red', 'font-size':'1.5em'});
+            $("#intro").next('p').css({'background-color' :'greenyellow'});
+            $("#intro").append("<p>내일은 날이 밝을거라고 하네요.");
+        });
+    </script>
+</body>
+</html>
